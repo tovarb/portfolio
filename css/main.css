@@ -10,10 +10,11 @@ button#coll-btn {
     position: absolute;
     right: 2%;
     top: 10px;
+    padding: 7px, 12px;
 }
 
 p.name {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Rock Salt', cursive;
     text-align: center;
 }
@@ -42,4 +43,12 @@ hr {
 #profile {
     border-radius: 50%;
     width: 180px;
+}
+
+p.about-me {
+    margin-top: 20%;
+}
+
+div.cont1, div.cont2 {
+    margin-left: 20px;
 }
