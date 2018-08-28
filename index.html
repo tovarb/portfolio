@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
@@ -18,13 +19,16 @@
         <button id="coll-btn" class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
             aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
             <span class="dark-blue-text">
-                <i class="fa fa-bars fa-1x"></i>
+                <i class="fas fa-star"></i>
             </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent1">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -45,16 +49,43 @@
             <div class="info-sect col-sm-12 col-md-6 col-lg-6">
                 <br>
                 <p class="about-me">Front End Web Developer. <br><br> I am always thinking how to improve things through innovation. I'm passionate about technology, business and always learning something new.</p>
-                <br>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js-square"></i>
-                <i class="fab fa-git"></i>
-                <i class="fab fa-github"></i>
-                
+                <br> 
             </div>
         </header>
     </div>
+    <!--Skills Section-->
+    <section id="skills">
+        <h2>Skills</h2>
+        <hr>
+        <div class="container cont-iconos">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <i class="techn devicon-html5-plain-wordmark"></i>
+                    <span>Advanced</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <i class="techn devicon-css3-plain-wordmark"></i>
+                    <span>Intermediate</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <i class="techn devicon-javascript-plain"></i>
+                    <span>Intermediate</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <i class="techn devicon-jquery-plain-wordmark"></i>
+                    <span>Intermediate</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <i class="techn devicon-bootstrap-plain"></i>
+                    <span>Intermediate</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <i class="techn devicon-github-plain"></i>
+                    <span>Intermediate</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--Contact Section-->
     <section id="portfolio">
         <h2>Portfolio</h2>
@@ -105,7 +136,19 @@
     <section id="contact">
         <h2>Contact</h2>
         <hr>
+        <div class="centr-align">
+            <i class="cont devicon-github-plain"></i>
+            <i class="cont fab fa-linkedin"></i>
+            <i class="cont fas fa-envelope"></i>
+            <span>yberenice.tovarh@gmail.com</span>
+        </div>
     </section>
+    <!--Footer-->
+    <footer id="footer-section">
+        <center>
+            <p>© 2018. All rights reserved.</p>
+        </center>
+    </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
