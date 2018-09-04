@@ -1,22 +1,25 @@
+/*General*/
 
 body {
-    /*font-family: 'Inconsolata', monospace;*/
+    font-family: 'Muli', sans-serif;
     
 }
 
+/*Navigation*/
 
 button#coll-btn {
     font-size: 25px;
-    background-color: black;
+    background-color: transparent;
     border: 1px solid transparent;
     position: absolute;
     right: 2%;
     top: 10px;
     width: 40px;
-    height: 15px;
+    height: 35px;
     z-index: 5;
 }
 
+/*Header*/
 p.name {
     font-size: 2em;
     font-family: 'Rock Salt', cursive;
@@ -32,6 +35,27 @@ div.info-sect {
     width: 100%;
     height: 40vh;
 
+}
+
+/*Star*/
+
+@keyframes jump { 0% { top: 0; } 50% { top: 30px; } 100% { top: 0; } }
+
+#star { position: relative; margin: 0 auto; text-align: center; animation: jump 5s infinite;
+}
+
+i { 
+    content: '\f0a8'; 
+    font-family: 'FontAwesome'; 
+    font-size: 80px; 
+    color: black;
+}
+
+
+/*Skills Section*/
+
+#skills {
+    margin-top: 10%;
 }
 
 h2 {
@@ -52,7 +76,10 @@ hr {
 
 p.about-me {
     margin-top: 17%;
+    font-size: 15px;
 }
+
+/*Portfolio Section*/
 
 div#cont1, div#cont2 {
     margin: 20px;
@@ -61,6 +88,7 @@ div#cont1, div#cont2 {
 i.fa-star {
     color: black;
     font-size: 30px;
+    z-index: 5;
 }
 
 i.techn {
@@ -70,7 +98,6 @@ i.techn {
 
 i.techn:hover {
     color: grey;
-    font-size: 5em;
 }
 
 .cont-iconos {
@@ -101,14 +128,15 @@ img {
     width: 100px;
 }
 
+/*Contact Section*/
 
 /*Footer Section*/
 
 #footer-section {
-    background-color: black;
+    background-color: white;
     height: 5vh;
 }
 
 #footer-section p {
-    color: white;
+    color: black;
 }
