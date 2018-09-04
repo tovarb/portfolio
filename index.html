@@ -13,42 +13,40 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!--Navigation-->
-    <!--Navbar-->
-    <nav class="navbar navbar-light light-blue lighten-4">
-        <button id="coll-btn" class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-            aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-            <div id="star">
-                <i class="fas fa-star"></i>
-            </div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--Header-->
+    <!--Navigation - Header-->
     <div id="about" class="container">
         <header class="row cont-header">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <p class="name"><img id="profile" src="assets/images/profile.jpg" alt="profile-picture"> <br>Berenice </p>
-                <p class="name">Tovar</p>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <a class="nav-link" href="#about"><p class="skills-red float-1">About</p></a>
+                <i class="fas fa-star float-3 star-left"></i>
+                <a class="nav-link" href="#skills"><p class="skills-red float-2">Skills</p></a>
+                <br>
+                <br>
+                <i class="fas fa-star float-1"></i>
             </div>
-            <div class="info-sect col-sm-12 col-md-6 col-lg-6">
-                <p class="about-me">Front End Web Developer and Entrepreneur. I am always thinking how to improve things through innovation. I am passionate about technology, business and always learning something new.</p>
-                <br> 
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div>
+                    <p class="name">
+                        <img id="profile" src="assets/images/profile.jpg" alt="profile-picture">
+                        <br>Berenice </p>
+                    <p class="name">Tovar</p>
+                </div>
+                <div>
+                    <p class="about-me">Front End Web Developer and Entrepreneur. I love technology and business. I started creating two online stores
+                        and decided to learn how to develop them from zero. I have communication, negotiation, leadership and teamwork
+                        skills. I'm familiar with Agile Development and Scrum Project Management.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <a class="nav-link" href="#portfolio"><p class="skills-red float-3">Portfolio</p></a>
+                <i class="fas fa-star float-1"></i>
+                <a class="nav-link" href="#contact"><p class="skills-red float-2">Contact</p></a>
+                <br>
+                <br>
+                <i class="fas fa-star float-3 star-right"></i>  
             </div>
         </header>
     </div>
@@ -146,10 +144,7 @@
     </section>
     <!--Portfolio Section-->
     <section id="portfolio">
-        <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-5"></div>
-            <h2 class="col-lg-3 col-md-3 col-sm-3">Portfolio</h2>
-        </div>
+        <h2>Portfolio</h2>
         <br>
         <div id="cont1" class="card-deck">
             <div class="card">
@@ -194,10 +189,7 @@
     </section>
     <!--Contact Section-->
     <section id="contact">
-        <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-5"></div>
-            <h2 class="col-lg-3 col-md-3 col-sm-3">Contact</h2>
-        </div>
+        <h2>Contact</h2>
         <br>
         <div class="centr-align">
             <i class="cont devicon-github-plain"></i>
