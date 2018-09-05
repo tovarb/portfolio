@@ -59,10 +59,29 @@ i.star-right {
 }
 
 i { 
-    content: '\f0a8'; 
     font-family: 'FontAwesome'; 
-    font-size: 80px; 
     color: black;
+}
+
+
+/*Arrow*/
+
+@keyframes jump { 0% { top: 0; } 50% { top: 50px; } 100% { top: 0; } }
+
+
+#arrow-down { position: relative; margin: 0 auto; text-align: center; animation: jump 5s infinite;
+
+}
+
+i:hover { 
+    color: grey; 
+}
+
+i { 
+    font-family: 'FontAwesome'; 
+    font-size: 80px;
+    color: black;
+    margin: 30px;
 }
 
 
@@ -130,6 +149,17 @@ i.techn:hover {
 
 span {
     color: white;
+    text-align: right;
+}
+
+.center {
+    text-align: right;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.align-items {
+    padding-left: 15px;
 }
 
 i:hover + span {
@@ -219,6 +249,7 @@ i.devicon-atom-original:hover {
 
 #contact {
     margin: 10vh;
+    margin-top: 20vh;
 }
 
 i.fa-envelope:hover {
