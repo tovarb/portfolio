@@ -1,10 +1,12 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -12,17 +14,22 @@
     <link rel="stylesheet" href="css/assets/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <!--Navigation - Header-->
     <div id="about" class="container">
         <header class="row cont-header">
             <div class="col-sm-12 col-md-3 col-lg-3">
-                <a class="nav-link" href="#about"><p class="skills-red float-1">About</p></a>
+                <a class="nav-link" href="#about">
+                    <p class="skills-red float-1">About</p>
+                </a>
                 <i class="fas fa-star float-3 star-left"></i>
-                <a class="nav-link" href="#skills"><p class="skills-red float-2">Skills</p></a>
+                <a class="nav-link" href="#skills" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <p class="skills-red float-2">Skills</p>
+                </a>
                 <br>
                 <br>
-                <i class="fas fa-star float-1"></i>
+                <i class="fas fa-star float-1" onclick="yellowStar();"></i>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <div>
@@ -32,172 +39,195 @@
                     <p class="name">Tovar</p>
                 </div>
                 <div>
-                    <p class="about-me">Front End Web Developer and Entrepreneur. I love technology and business. I started creating two online stores
-                        and decided to learn how to develop them from zero. I have communication, negotiation, leadership and teamwork
-                        skills. I'm familiar with Agile Development and Scrum Project Management.
+                    <p class="about-me">Front End Web Developer and Entrepreneur. I love technology and business. I started creating two online
+                        stores and decided to learn how to develop them from zero. I have communication, negotiation, leadership
+                        and teamwork skills. I'm familiar with Agile Development and Scrum Project Management.
                     </p>
                     <br>
                     <br>
                 </div>
             </div>
             <div class="col-sm-12 col-md-3 col-lg-3">
-                <a class="nav-link" href="#portfolio"><p class="skills-red float-3">Portfolio</p></a>
+                <a class="nav-link" href="#portfolio" data-toggle="modal" data-target=".bd-example2-modal-lg">
+                    <p class="skills-red float-3">Portfolio</p>
+                </a>
                 <i class="fas fa-star float-1"></i>
-                <a class="nav-link" href="#contact"><p class="skills-red float-2">Contact</p></a>
+                <a class="nav-link" href="#contact">
+                    <p class="skills-red float-2">Contact</p>
+                </a>
                 <br>
                 <br>
-                <i class="fas fa-star float-3 star-right"></i>  
+                <i class="fas fa-star float-3 star-right"></i>
             </div>
         </header>
     </div>
-    <!--Skills Section-->
-    <section id="skills">
-        <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-5"></div>
-            <h2 class="col-lg-3 col-md-3 col-sm-3">Skills</h2>
-        </div>
-        <br>
-        <div class="container cont-iconos">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3"></div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-html5-plain-wordmark"></i>
-                    <span>Advanced</span>
+    <!--Modal Skills-->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Skills</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span id="btn-close" aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-css3-plain-wordmark"></i>
-                    <span>Intermediate</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-javascript-plain"></i>
-                    <span>Intermediate</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-jquery-plain-wordmark"></i>
-                    <span>Intermediate</span>
-                </div>
-            </div>
-        </div>
-        <div class="container cont-iconos">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3"></div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-bootstrap-plain"></i>
-                    <span>Intermediate</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-github-plain"></i>
-                    <span>Intermediate</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-git-plain"></i>
-                    <span>Intermediate</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-nodejs-plain"></i>
-                    <span>Basic</span>
-                </div>
-            </div>
-        </div>
-        <div class="container cont-iconos">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3"></div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-mocha-plain"></i>
-                    <span>Basic</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-react-original"></i>
-                    <span>Basic</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-babel-plain"></i>
-                    <span>Basic</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-sass-original"></i>
-                    <span>Basic</span>
-                </div>
-            </div>
-        </div>
-        <div class="container cont-iconos">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3"></div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-slack-plain"></i>
-                    <span>Advanced</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-trello-plain"></i>
-                    <span>Intermediate</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-visualstudio-plain"></i>
-                    <span>Intermediate</span>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <i class="techn devicon-atom-original"></i>
-                    <span>Intermediate</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Portfolio Section-->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <br>
-        <div id="cont1" class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="assets/images/MobilePixels.jpg" alt="Card image cap">
-                <div class="card-body">
-                    
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="assets/images/Probee-mp.jpg" alt="Card image cap">
-                <div class="card-body">
-                    
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="assets/images/easy-code.jpg" alt="Card image cap">
-                <div class="card-body">
-                    
-                </div>
-            </div>
-        </div>
-        <div id="cont2" class="card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/Pokedex.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        
+                <!--Skills Section-->
+                <section id="skills">
+                    <div class="container cont-iconos">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-html5-plain-wordmark"></i>
+                                <span>Advanced</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-css3-plain-wordmark"></i>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-javascript-plain"></i>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-jquery-plain-wordmark"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/aliexpress.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        
+                    <div class="container cont-iconos">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-bootstrap-plain"></i>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-github-plain"></i>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-git-plain"></i>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-nodejs-plain"></i>
+                                <span>Basic</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/lyft.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        
+                    <div class="container cont-iconos">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-mocha-plain"></i>
+                                <span>Basic</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-react-original"></i>
+                                <span>Basic</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-babel-plain"></i>
+                                <span>Basic</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-sass-original"></i>
+                                <span>Basic</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="container cont-iconos">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-slack-plain"></i>
+                                <span>Advanced</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-trello-plain"></i>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-visualstudio-plain"></i>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <i class="techn devicon-atom-original"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-    </section>
+        </div>
+    </div>
+    <!--Portfolio-->
+    <div class="modal fade bd-example2-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Portfolio</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span id="btn-close" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!--Portfolio Section-->
+                <section id="portfolio">
+                    <div id="cont1" class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/MobilePixels.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/Probee-mp.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/easy-code.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cont2" class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/Pokedex.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/aliexpress.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/lyft.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
     <!--Contact Section-->
     <section id="contact">
         <h2>Contact</h2>
         <br>
         <div class="centr-align">
             <i class="cont devicon-github-plain"></i>
-            <i class="cont fab fa-linkedin"></i>
-            <i class="cont fas fa-envelope"></i>
-            <span>yberenice.tovarh@gmail.com</span>
         </div>
         <br>
+        <div class="centr-align">
+            <i class="cont fab fa-linkedin"></i>
+        </div>
+        <br>
+        <div class="centr-align">
+            <i class="cont fas fa-envelope"></i>
+            <br>
+            <span>yberenice.tovarh@gmail.com</span>
+        </div>
     </section>
     <!--Footer-->
     <footer id="footer-section">
@@ -207,9 +237,11 @@
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/assets/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

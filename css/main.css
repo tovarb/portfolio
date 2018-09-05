@@ -69,7 +69,7 @@ i {
 /*Skills Section*/
 
 #skills {
-    margin-top: 5em;
+    margin-top: 1em;
     min-height: 50vh;
     max-height: 90vh;
     margin-bottom: 7em;
@@ -91,6 +91,15 @@ h2 {
 p.about-me {
     margin-top: 17%;
     font-size: 17px;
+}
+
+i.techn {
+    margin: 20px;
+    padding: 10px;
+}
+
+#btn-close {
+    color: black;
 }
 
 /*Portfolio Section*/
@@ -120,12 +129,11 @@ i.techn:hover {
 }
 
 span {
-    display: none;
-    color: black;
+    color: white;
 }
 
 i:hover + span {
-    display: block;
+    color: black;
 }
 
 i.cont {
@@ -142,7 +150,80 @@ img {
     width: 100px;
 }
 
+.card {
+    border: 1px solid transparent;
+    margin: 20px;
+}
+
+i.devicon-html5-plain-wordmark:hover {
+    color: #f66337;
+}
+
+i.devicon-css3-plain-wordmark:hover {
+    color: #1a64aa;
+}
+
+i.devicon-javascript-plain:hover {
+    color: #ffc553;
+}
+
+i.devicon-jquery-plain-wordmark:hover {
+    color: #006aa6;
+}
+
+i.devicon-bootstrap-plain:hover {
+    color: #7240b4;
+}
+
+i.devicon-git-plain:hover {
+    color: #f1503c;
+}
+
+i.devicon-nodejs-plain:hover {
+    color: #00b468;
+}
+
+i.devicon-mocha-plain:hover {
+    color: #8f664c;
+}
+
+i.devicon-react-original:hover {
+    color: #55dbf8;
+}
+
+i.devicon-babel-plain:hover {
+    color: #fadb5e;
+}
+
+i.devicon-sass-original:hover {
+    color: #d16797;
+}
+
+i.devicon-slack-plain:hover {
+    color: #e51558;
+}
+
+i.devicon-trello-plain:hover {
+    color: #007bba;
+}
+
+i.devicon-visualstudio-plain:hover {
+    color: #8861bf;
+}
+
+i.devicon-atom-original:hover {
+    color: #00af67;
+}
+
 /*Contact Section*/
+
+#contact {
+    margin: 10vh;
+}
+
+i.fa-envelope:hover {
+    color: black;
+}
 
 /*Footer Section*/
 
