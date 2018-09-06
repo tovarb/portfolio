@@ -8,7 +8,7 @@ body {
 /*Header*/
 
 #about {
-    margin-top: 5%;
+    margin-top: 3%;
 }
 p.name {
     font-size: 2em;
@@ -107,15 +107,23 @@ h2 {
     width: 180px;
 }
 
-p.about-me {
-    margin-top: 17%;
-    font-size: 17px;
+.grow:hover
+{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
-i.techn {
-    margin: 20px;
-    padding: 10px;
+p.about-me {
+    margin-top: 10vh;
+    font-size: 17px;
+    text-align: center;
 }
+/*
+i.techn {
+    padding: 10px;
+    margin-left: 40px;
+}*/
 
 #btn-close {
     color: black;
@@ -133,33 +141,17 @@ i.fa-star {
     z-index: 5;
 }
 
-i.techn {
-    font-size: 4em;
-    text-align: center;
-}
-
 i.techn:hover {
     color: grey;
 }
 
 .cont-iconos {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-left: 5%;
 }
 
 span {
     color: white;
     text-align: right;
-}
-
-.center {
-    text-align: right;
-    padding-left: 35px;
-    padding-right: 35px;
-}
-
-.align-items {
-    padding-left: 15px;
 }
 
 i:hover + span {
@@ -183,6 +175,7 @@ img {
 .card {
     border: 1px solid transparent;
     margin: 20px;
+    margin-bottom: 40px;
 }
 
 i.devicon-html5-plain-wordmark:hover {
@@ -245,6 +238,42 @@ i.devicon-atom-original:hover {
     color: #00af67;
 }
 
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card:hover .image {
+    opacity: 0.5;
+}
+
+.card:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    padding: 5px 18px;
+    text-decoration: none;
+}
+
 /*Contact Section*/
 
 #contact {
@@ -254,6 +283,19 @@ i.devicon-atom-original:hover {
 
 i.fa-envelope:hover {
     color: black;
+}
+
+#github-icono {
+    text-decoration: none;
+}
+
+i.fa-envelope:hover + span {
+    color: black;
+}
+
+.email-bt {
+    position: absolute;
+    left: 42%;
 }
 
 /*Footer Section*/
@@ -266,3 +308,25 @@ i.fa-envelope:hover {
 #footer-section p {
     color: black;
 }
+
+
+/* Media Query */
+
+@media screen and (min-width:320px ) and (max-width:576px){
+    i.techn {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width:768px ) and (max-width:1025px){
+    i.techn {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 1025px ) and (max-width:2560px){
+
+}
+
+
+  /*[id^=picture]*/
