@@ -1,8 +1,7 @@
 /*General*/
 
 body {
-    font-family: 'Muli', sans-serif;
-    
+    font-family: 'Muli', sans-serif;  
 }
 
 /*Header*/
@@ -270,9 +269,22 @@ i.devicon-atom-original:hover {
     background-color: grey;
     color: white;
     font-size: 16px;
-    padding: 5px 18px;
+    padding: 5px 15px;
     text-decoration: none;
 }
+
+.level {
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
+
+i.techn:hover > br + span {
+    color: black;
+}
+
 
 /*Contact Section*/
 
@@ -316,17 +328,23 @@ i.fa-envelope:hover + span {
     i.techn {
         font-size: 3em;
     }
+    .email-bt {
+        left: 25%;
+    }
+    .level {
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width:768px ) and (max-width:1025px){
     i.techn {
         font-size: 3em;
     }
+
+    .email-bt {
+        left: 30%;
+    }
+    .level {
+        font-size: 12px;
+    }
 }
-
-@media screen and (min-width: 1025px ) and (max-width:2560px){
-
-}
-
-
-  /*[id^=picture]*/
