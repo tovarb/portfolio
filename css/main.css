@@ -329,10 +329,15 @@ i.fa-envelope:hover + span {
         font-size: 3em;
     }
     .email-bt {
-        left: 25%;
+        left: 30%;
     }
     .level {
         font-size: 10px;
+    }
+
+    i.star4{
+        position: absolute;
+        right: 10%;
     }
 }
 
