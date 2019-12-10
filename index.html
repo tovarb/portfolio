@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -24,8 +23,8 @@
                     <p class="skills-red float-2 grow">Skills</p>
                 </a>
                 <i class="fas fa-star float-3 star-left"></i>
-                <a class="nav-link" href="">
-                    <p class="skills-red float-1 grow">CV</p>
+                <a class="nav-link" href="#about" data-toggle="modal" data-target=".bd-example3-modal-lg">
+                    <p class="skills-red float-3 grow">About</p>
                 </a>
                 <br>
                 <br>
@@ -33,16 +32,13 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <div>
-                    <p class="name">
+                    <h1 class="name">
                         <img id="profile" src="assets/images/profile.jpg" alt="profile-picture">
-                        <br>Berenice </p>
-                    <p class="name">Tovar</p>
+                        <br>Berenice <br> Tovar
+                    </h1>
                 </div>
                 <div>
-                    <p class="about-me">Front End Web Developer. I love technology and business. I started creating two online
-                        stores and decided to learn how to develop them from zero. I have communication, negotiation, leadership
-                        and teamwork skills. I'm familiar with Agile Development and Scrum Project Management.
-                    </p>
+                    <h2 class="about-me">Front End Web Developer</h2>
                     <br>
                     <br>
                 </div>
@@ -77,7 +73,7 @@
                         <span id="btn-close" aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <!--Skills Section-->
+                <!--Skills Body-->
                 <section id="skills">
                     <div class="container cont-iconos">
                         <div class="row">
@@ -157,7 +153,7 @@
                         <span id="btn-close" aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <!--Portfolio Section-->
+                <!--Portfolio Body-->
                 <section id="portfolio">
                     <div id="cont1" class="card-deck">
                         <div class="card">
@@ -203,18 +199,39 @@
             </div>
         </div>
     </div>
+    <!--About Section-->
+    <div class="modal fade bd-example3-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">About</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span id="btn-close" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!--About Body-->
+                    <section id="portfolio">
+                        <div id="cont1" class="card-deck">
+                            <div class="card">
+                                <p>Front End Web Developer with experience developing technology projects with different tools. A fast learner person, hard worker, open to feedback and learning.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     <!--Contact Section-->
     <section id="contact">
         <h2>Contact</h2>
         <br>
         <div class="centr-align">
-            <a id="github-icono" href="https://github.com/BereniceTovar" target="_blank">
+            <a id="github-icono" href="https://github.com/tovarb" target="_blank">
                 <i class="cont devicon-github-plain"></i>
             </a>
         </div>
         <br>
         <div class="centr-align">
-            <a id="linkedin-icono" href="https://www.linkedin.com/in/btovar/" target="_blank">
+            <a id="linkedin-icono" href="https://www.linkedin.com/in/tovarb/" target="_blank">
                 <i class="cont fab fa-linkedin"></i>
             </a>    
         </div>
@@ -227,12 +244,11 @@
     <!--Footer-->
     <footer id="footer-section">
         <center>
-            <p> Copyright 2018</p>
+            <p> Copyright 2019</p>
         </center>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/assets/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
