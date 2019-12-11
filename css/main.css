@@ -260,7 +260,7 @@ i.devicon-atom-original:hover {
     opacity: 1;
 }
 
-.text {
+div.text a {
     background-color: grey;
     color: white;
     font-size: 16px;
