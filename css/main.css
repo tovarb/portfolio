@@ -222,65 +222,6 @@ img {
     margin-bottom: 40px;
 }
 
-i.devicon-html5-plain-wordmark:hover {
-    color: #f66337;
-}
-
-i.devicon-css3-plain-wordmark:hover {
-    color: #1a64aa;
-}
-
-i.devicon-javascript-plain:hover {
-    color: #ffc553;
-}
-
-i.devicon-jquery-plain-wordmark:hover {
-    color: #006aa6;
-}
-
-i.devicon-bootstrap-plain:hover {
-    color: #7240b4;
-}
-
-i.devicon-git-plain:hover {
-    color: #f1503c;
-}
-
-i.devicon-nodejs-plain:hover {
-    color: #00b468;
-}
-
-i.devicon-mocha-plain:hover {
-    color: #8f664c;
-}
-
-i.devicon-react-original:hover {
-    color: #55dbf8;
-}
-
-i.devicon-babel-plain:hover {
-    color: #fadb5e;
-}
-
-i.devicon-sass-original:hover {
-    color: #d16797;
-}
-
-i.devicon-slack-plain:hover {
-    color: #e51558;
-}
-
-i.devicon-trello-plain:hover {
-    color: #007bba;
-}
-
-i.devicon-visualstudio-plain:hover {
-    color: #8861bf;
-}
-
-i.devicon-atom-original:hover {
-    color: #00af67;
-}
 
 .image {
     opacity: 1;
@@ -351,8 +292,7 @@ i.fa-envelope:hover+span {
 }
 
 .email-bt {
-    position: absolute;
-    left: 42%;
+    text-align: center
 }
 
 
@@ -368,15 +308,13 @@ i.fa-envelope:hover+span {
 }
 
 
-/* Media Query */
+/* Media Queries */
 
 @media screen and (min-width:320px) and (max-width:576px) {
     i.techn {
         font-size: 3em;
     }
-    .email-bt {
-        left: 30%;
-    }
+
     .level {
         font-size: 10px;
     }
@@ -390,9 +328,7 @@ i.fa-envelope:hover+span {
     i.techn {
         font-size: 3em;
     }
-    .email-bt {
-        left: 30%;
-    }
+
     .level {
         font-size: 12px;
     }
