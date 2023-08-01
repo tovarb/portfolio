@@ -44,6 +44,10 @@ i.star-right {
 }
 
 
+.img-portfolio {
+    height: 220px;
+}
+
 /*Star*/
 
 @keyframes jump {
@@ -271,6 +275,30 @@ i.techn:hover>br+span {
     color: black;
 }
 
+.project-container {	
+    display: flex;	
+    flex-direction: row;	
+    flex-wrap: wrap;	
+    justify-content: center;
+    margin: 5rem 0rem;	
+  }	
+
+  .img-container img {	
+    max-height: 450px;	
+    min-height: fit-content;	
+    width: auto;	
+  }	
+  .info-project {	
+    display: flex;	
+    flex-direction: column;	
+    justify-content: center;	
+    align-items: left;	
+    padding: 0px 40px;	
+  }	
+  .info-project small {	
+    font-size: 16px;	
+    padding: 10px 0px;	
+  }
 
 /*Contact Section*/
 
@@ -318,9 +346,14 @@ i.fa-envelope:hover+span {
     .level {
         font-size: 10px;
     }
+    
     i.star4 {
         position: absolute;
         right: 10%;
+    }
+
+    .img-portfolio {
+        height: 150px;
     }
 }
 
@@ -333,3 +366,25 @@ i.fa-envelope:hover+span {
         font-size: 12px;
     }
 }
+
+@media only screen and (max-width: 768px) {	
+    .info-project a {	
+      margin-bottom: 50px;	
+    }	
+    .img-container img {	
+      max-height: 200px;	
+      min-height: fit-content;	
+    }	
+  }	
+  @media only screen and (max-width: 425px) {	
+    .img-container img {	
+      max-height: 200px;	
+      min-height: fit-content;	
+    }	
+  }	
+  @media only screen and (max-width: 320px) {	
+    .img-container img {	
+      max-height: 150px;	
+      min-height: fit-content;	
+    }	
+  }
